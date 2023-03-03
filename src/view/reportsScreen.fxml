@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportsController">
+   <children>
+      <Button layoutX="108.0" layoutY="76.0" mnemonicParsing="false" onAction="#onActionCustomerAppointmentsReport" text="Customer Appointments Report" textFill="#ca2323">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="116.0" layoutY="156.0" mnemonicParsing="false" onAction="#actionContactsReport" prefHeight="42.0" prefWidth="211.0" text="Contacts Report" textFill="#347ec4">
+         <font>
+            <Font size="19.0" />
+         </font></Button>
+      <Button layoutX="116.0" layoutY="244.0" mnemonicParsing="false" onAction="#actionCustomerAssignedToContactReport" text="CUSTOMER FREQUENCY REPORT" textFill="#64d34b">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="426.0" layoutY="324.0" mnemonicParsing="false" onAction="#actionBackToMain" text="BACK TO MAIN" textFill="#c41313">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

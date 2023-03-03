@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="471.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.updateCustomerController">
+
+    <Label layoutX="30.0" layoutY="100.0" prefHeight="28.0" prefWidth="80.0" text="Customer ID" />
+    <TextField fx:id="inputCustomerID" disable="true" editable="false" layoutX="160.0" layoutY="101.0" />
+    <Label layoutX="30.0" layoutY="145.0" prefHeight="28.0" prefWidth="97.0" text="Customer Name" />
+    <TextField fx:id="inputCustomerName" layoutX="160.0" layoutY="146.0" prefHeight="26.0" prefWidth="204.0" />
+    <Label layoutX="30.0" layoutY="194.0" prefHeight="28.0" prefWidth="109.0" text="Customer Address" />
+    <TextField fx:id="inputCustomerAddress" layoutX="157.0" layoutY="195.0" prefHeight="26.0" prefWidth="453.0" />
+    <Label layoutX="32.0" layoutY="305.0" prefHeight="28.0" prefWidth="146.0" text="Customer Postal Code" />
+    <TextField fx:id="inputPostalCode" layoutX="165.0" layoutY="306.0" prefHeight="26.0" prefWidth="71.0" />
+    <Label layoutX="29.0" layoutY="245.0" prefHeight="28.0" prefWidth="100.0" text="Customer Phone" />
+    <TextField fx:id="inputCustomerPhone" layoutX="157.0" layoutY="246.0" prefHeight="26.0" prefWidth="146.0" />
+    <Label layoutX="331.0" layoutY="259.0" prefHeight="28.0" prefWidth="105.0" text="Customer Country" />
+    <Label layoutX="512.0" layoutY="258.0" prefHeight="28.0" prefWidth="90.0" text="State/Province" />
+    <Label layoutX="96.0" layoutY="24.0" text="UPDATE CUSTOMER FORM" textFill="#a2a40f">
+      <font>
+         <Font size="28.0" />
+      </font></Label>
+    <ComboBox fx:id="selectStateComboBox" layoutX="512.0" layoutY="305.0" prefHeight="25.0" prefWidth="90.0" />
+    <ComboBox fx:id="selectCountryComboBox" layoutX="317.0" layoutY="306.0" onAction="#actionCountrySelected" prefWidth="150.0" />
+   <Button layoutX="47.0" layoutY="392.0" mnemonicParsing="false" onAction="#actionUpdateCustomer" text="UPDATE" textFill="#42950f">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Button>
+   <Button fx:id="cancelUpdateButton" layoutX="178.0" layoutY="392.0" mnemonicParsing="false" onAction="#actionCancelUpdateCustomer" text="CANCEL" textFill="#d82e10">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Button>
+
+</AnchorPane>

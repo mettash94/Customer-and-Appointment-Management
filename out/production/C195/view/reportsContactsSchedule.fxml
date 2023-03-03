@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="472.0" prefWidth="923.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportsContactsScheduleController">
+
+    <children>
+
+
+        <TableView fx:id="allAppointmentsTable" layoutX="28.0" layoutY="86.0" prefHeight="301.0" prefWidth="672.0">
+            <columns>
+                <TableColumn fx:id="appointmentIDColumn" prefWidth="111.33334350585938" text="Appointment ID" />
+                <TableColumn fx:id="appointmentTitleColumn" text="Title" />
+                <TableColumn fx:id="appointmentDescriptionColumn" prefWidth="93.0" text="Description" />
+                <TableColumn fx:id="appointmentTypeColumn" prefWidth="84.33334350585938" text="Type" />
+                <TableColumn fx:id="appointmentStartColumn" prefWidth="110.33331298828125" text="Start Date/Time" />
+                <TableColumn fx:id="appointmentEndColumn" prefWidth="109.3333740234375" text="End Date/Time" />
+                <TableColumn fx:id="CustomerIDColumn" text="CustomerID" />
+            </columns>
+        </TableView>
+      <ComboBox fx:id="selectContactComboBox" layoutX="469.0" layoutY="29.0" onAction="#actionContactSelected" prefWidth="150.0" />
+      <Button layoutX="546.0" layoutY="412.0" mnemonicParsing="false" onAction="#actionBackToReports" text="BACK TO REPORTS" textFill="#d12b2b">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="294.0" layoutY="33.0" text="SELECT CONTACT" textFill="#96df38">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+
+    </children>
+
+</AnchorPane>

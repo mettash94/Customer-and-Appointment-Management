@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.myReportController">
+   <children>
+      <TableView fx:id="customerListTable" layoutX="143.0" layoutY="100.0" prefHeight="230.0" prefWidth="302.0">
+        <columns>
+          <TableColumn fx:id="customerNameColumn" prefWidth="147.66664123535156" text="Customer " />
+            <TableColumn fx:id="totalAppointmentsColumn" prefWidth="154.3333740234375" text="Total Appointments " />
+        </columns>
+      </TableView>
+      <Label layoutX="139.0" layoutY="44.0" text="Total Appointments Per Customer Report">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button layoutX="450.0" layoutY="342.0" mnemonicParsing="false" onAction="#actionBackToReports" text="BACK" />
+
+
+   </children>
+</AnchorPane>

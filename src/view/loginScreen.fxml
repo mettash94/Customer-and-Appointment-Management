@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="492.0" prefWidth="773.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.loginController">
+   <children>
+      <Label fx:id="userIdLabel" layoutX="83.0" layoutY="141.0" text="USER NAME" />
+      <Label fx:id="passwordLabel" layoutX="84.0" layoutY="179.0" text="PASSWORD" />
+      <TextField fx:id="inputUserName" layoutX="178.0" layoutY="137.0" />
+      <TextField fx:id="inputPassword" layoutX="178.0" layoutY="175.0" />
+      <Button fx:id="loginButton" layoutX="88.0" layoutY="226.0" mnemonicParsing="false" onAction="#actionBtnLogin" text="LOGIN">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="exitButton" layoutX="194.0" layoutY="226.0" mnemonicParsing="false" text="EXIT">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginFormLabel" layoutX="246.0" layoutY="22.0" text="LOGIN FORM" textFill="#a22828">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label fx:id="zoneIdLabel" layoutX="96.0" layoutY="87.0" text="User Time Zone" textFill="#d62d1a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

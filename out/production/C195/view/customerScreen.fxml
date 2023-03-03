@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="595.0" prefWidth="812.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.customerController">
+    <TableView fx:id="customerRecordsTable" layoutX="29.0" layoutY="86.0" prefHeight="298.0" prefWidth="760.0">
+        <columns>
+            <TableColumn fx:id="customerColumnId" prefWidth="38.0" text="ID" />
+            <TableColumn fx:id="customerColumnName" prefWidth="144.5" text="Customer Name" />
+            <TableColumn fx:id="customerColumnAddress" prefWidth="214.5" text="Address" />
+            <TableColumn fx:id="customerColumnPostalCode" prefWidth="76.5" text="Postal Code" />
+            <TableColumn fx:id="customerColumnPhone" prefWidth="85.0" text="Phone" />
+            <TableColumn fx:id="customerColumnDivisionID" prefWidth="97.0" text="Division ID" />
+         <TableColumn fx:id="customerColumnDivisionName" prefWidth="97.0" text="Division Name" />
+        </columns>
+    </TableView>
+    <Label layoutX="218.0" layoutY="36.0" prefHeight="34.0" prefWidth="324.0" text="ALL CUSTOMER RECORDS" textAlignment="CENTER" textFill="#ee6e28">
+      <font>
+         <Font name="System Bold" size="23.0" />
+      </font></Label>
+   <Button fx:id="customerAddButton" layoutX="74.0" layoutY="421.0" mnemonicParsing="false" onAction="#actionAddCustomer" text="ADD" textFill="#0c9995">
+      <font>
+         <Font size="26.0" />
+      </font>
+   </Button>
+   <Button fx:id="customerUpdateButton" layoutX="201.0" layoutY="421.0" mnemonicParsing="false" onAction="#actionCustomerUpdate" text="UPDATE" textFill="#0c9995">
+      <font>
+         <Font size="26.0" />
+      </font>
+   </Button>
+   <Button fx:id="customerDeleteButton" layoutX="367.0" layoutY="421.0" mnemonicParsing="false" onAction="#actionDeleteCustomer" text="DELETE" textFill="#0c9995">
+      <font>
+         <Font size="26.0" />
+      </font>
+   </Button>
+   <Button fx:id="customerExitButton" layoutX="599.0" layoutY="421.0" mnemonicParsing="false" onAction="#actionReturnToMainMenu" text="Main Menu" textFill="#e81310">
+      <font>
+         <Font size="26.0" />
+      </font>
+   </Button>
+
+</AnchorPane>
