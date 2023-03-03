@@ -6,8 +6,7 @@ The purpose of the application is to manage appointments, customers and display 
 
 •  author, contact information, student application version, and date
 
-Shwetha Mettakadapa
-smetta1@wgu.edu
+Shwetha Mett
 1117
 10/20/2022
 
